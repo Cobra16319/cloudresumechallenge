@@ -3,10 +3,29 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- <div class="sidenav" style="width:25%">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education/<br>Certification</a>
+  <a href="#skills">Skills</a>
+  <a href="#interests">Interests</a>
+  <a href="#links">Links</a>
+</div> -->
+<script src="https://unpkg.com/axios/dist/axios.min.js">
+
+const API_URL = 'https://9i9b40do21.execute-api.us-west-2.amazonaws.com/prod';
+
+var newCount = axios.get('${API_URL}/count-updater');
+
+window.onload = function() {
+	document.getElementById("link").innerHTML=newCount;
+}
+
+</script>
 </head>
-<body>
+<body onload="incrementCount(10)">
 <h1>
-Jeremy Swingle: Cloud Enthusiast
+Jeremy Swingle: Cloud Enthusiast <a id="myLink" href = test.html></a>
 </h1>
 <h2>
 jeremyswingle@yahoo.com &#9913; Seattle, WA
@@ -14,11 +33,11 @@ jeremyswingle@yahoo.com &#9913; Seattle, WA
 <h3>
 Experience
 </h3>
-<p id="titles">
+<<p id="titles">
 Insight Global
+	<p id="dates">
+	June 2017 - Present &#9913 Bellevue, WA
 </p>
-<p id="dates">
-June 2017 - Present &#9913 Bellevue, WA
 </p>
 	<ul>
    		<li>Assess collected data for accordance to customer requirements (e.g. filenames, metadata, photo/video tagging)</li>
@@ -83,14 +102,11 @@ Choral singing<br>History<br>Philosophy<br>Seattle Sounders FC
 <h3>
 Links
 </h3>
-<ul id="sidebar">
-    <li><a href="#About#">About</a></li>
-    <li><a href="#Experience#">Experience</a></li>
-    <li><a href="#Education#">Education</a></li>
-    <li><a href="#Skills#">Skills</a></li>
-    <li><a href="#Interests#">Interests</a></li>
-    <li><a href="#Links#">Links</a></li>
-</ul>
 <img src="image.jpg" alt="Jeremy Swingle" width="500" height="600">
+<div>
+<script>
+    document.write("You've been here <b>" + amt() + "</b> times.")
+</script>
+</div>
 </body>
 </html>
