@@ -11,21 +11,19 @@
   <a href="#interests">Interests</a>
   <a href="#links">Links</a>
 </div> -->
-<script src="https://unpkg.com/axios/dist/axios.min.js">
+<script>
 
-const API_URL = 'https://9i9b40do21.execute-api.us-west-2.amazonaws.com/prod';
-
-var newCount = axios.get('${API_URL}/count-updater');
-
-window.onload = function() {
-	document.getElementById("link").innerHTML=newCount;
-}
+window.addEventListener( "load", () => {
+fetch('https://9i9b40do21.execute-api.us-west-2.amazonaws.com/prod/count-updater').then(response => response.text())
+	.then(count => document.getElementById("link").innerHTML = count)
+} );
 
 </script>
 </head>
-<body onload="incrementCount(10)">
+<body>
+<p id="link"></p>
 <h1>
-Jeremy Swingle: Cloud Enthusiast <a id="link" href = test.html></a>
+Jeremy Swingle: Cloud Enthusiast
 </h1>
 <h2>
 jeremyswingle@yahoo.com &#9913; Seattle, WA
@@ -103,10 +101,5 @@ Choral singing<br>History<br>Philosophy<br>Seattle Sounders FC
 Links
 </h3>
 <img src="image.jpg" alt="Jeremy Swingle" width="500" height="600">
-<div>
-<script>
-    document.write("You've been here <b>" + amt() + "</b> times.")
-</script>
-</div>
 </body>
 </html>
