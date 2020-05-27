@@ -13,18 +13,19 @@
 </div> -->
 <script>
 
-window.addEventListener( "load", () => {
-fetch('https://9i9b40do21.execute-api.us-west-2.amazonaws.com/prod/count-updater').then(response => response.text())
-	.then(count => document.getElementById("link").innerHTML = count)
-} );
+window.onload = function() {
+  fetch('https://9i9b40do21.execute-api.us-west-2.amazonaws.com/prod/count-updater').then(response => response.text()).then(count => document.getElementById("link").innerHTML = count)
+};
 
 </script>
 </head>
 <body>
-<p id="link"></p>
 <h1>
 Jeremy Swingle: Cloud Enthusiast
 </h1>
+<p style = "text-align: center;">
+    Visits: <span id="link"></span>
+</p>
 <h2>
 jeremyswingle@yahoo.com &#9913; Seattle, WA
 </h2>
@@ -100,6 +101,6 @@ Choral singing<br>History<br>Philosophy<br>Seattle Sounders FC
 <h3>
 Links
 </h3>
-<img src="image.jpg" alt="Jeremy Swingle" width="500" height="600">
+<!-- <img src="image.jpg" alt="Jeremy Swingle" width="500" height="600"> -->
 </body>
 </html>
