@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Jeremy Swingle's Resume</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-<!-- <div class="sidenav" style="width:25%">
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#education">Education/<br>Certification</a>
-  <a href="#skills">Skills</a>
-  <a href="#interests">Interests</a>
-  <a href="#links">Links</a>
-</div> -->
-<script>
+	<div class="sidebar">
+		<br>
+		<img src="headshot.jpg" alt="Jeremy Swingle" class="photo">
+		<br>
+  		<a href="#contact">Contact</a>
+    	<a href="#skills">Skills</a>
+  		<a href="#education">Education/Certification</a>
+ 		<a href="#experience">Work Experience</a>
+  		<a href="#interests">Interests</a>
+	</div>
 
-window.onload = function() {
-  fetch('https://kesy6eh1ce.execute-api.us-west-1.amazonaws.com/prod/proxy').then(response => response.text()).then(count => document.getElementById("link").innerHTML = count)
-};
-
-</script>
+	<script>
+	window.onload = function() {
+  		fetch('https://kesy6eh1ce.execute-api.us-west-1.amazonaws.com/prod/proxy').then(response => response.text()).then(count => document.getElementById("link").innerHTML = count)
+	};
+	</script>
 </head>
+
 <body>
-<h1>
-Jeremy Swingle: Cloud Enthusiast
-</h1>
-<p style = "text-align: center;">
-    Visits: <span id="link"></span>
-</p>
-<h2>
-jeremyswingle@yahoo.com &#9913; Seattle, WA
-</h2>
-<h3>
-Experience
-</h3>
-<<p id="titles">
-Insight Global
-	<p id="dates">
-	June 2017 - Present &#9913 Bellevue, WA
-</p>
-</p>
-	<ul>
-   		<li>Assess collected data for accordance to customer requirements (e.g. filenames, metadata, photo/video tagging)</li>
-        <li>Team lead; responsible for high accuracy, daily reporting, and timely completion of projects</li> 
-    	<li>Utilize customer-provided data collection tools, communicate necessary bugfixes and recommend new features</li>
-        <li>Ensure confidentiality and eventual disposition of sensitive data, including personally identifiable information </li>
-        <li>Deliver data to clients and vendors securely via Azure, OneDrive, and DropBox</li>
-    </ul>
-<p id="titles">
-JEMCO Components & Fabrication
-</p>
-<p id="dates">
-Nov 2012 - June 2017 &#9913 Kirkland, WA
-</p>
-	<ul>
-   		<li>Digitally filed compliance certification, engineering documentation, and specifications</li>
-        <li>Managed inventory, sales, and vendor information</li>
-        <li>Designed new production programs using CorelDraw</li> 
-    	<li>Implemented customer revision requests for jobs in-process</li>
-    </ul>
-<h3>
-Education and Certification
-</h3>
-<p id="titles">
-Amazon Web Services
-</p>
-<p>
-Certified Solutions Architect - Associate<br>
-Certified SysOps Administrator - Associate<br>
-Certified Developer - Associate
-</p><p id="titles">
-Northwest University
-</p>
-<p id="dates">
-May 2016 &#9913 Kirkland, WA
-</p>
-<p>
-Bachelor of Arts<br>
-Magna Cum Laude
-</p>
-<h3>
-Skills
-</h3>
-<p>
-AWS Services:<br>
-	<ul>
-   		<li>S3</li>
-    	<li>VPC Networking</li>
-        <li>Load Balancing and Autoscaling</li>
-        <li>Route 53</li>
-        <li>DynamoDB</li> 
-        <li>Lambda</li>
-    </ul>
-Docker<br>Kubernetes<br>Python<br>GitHub
-</p>
-<h3>
-Interests
-</h3>
-<p>
-Choral singing<br>History<br>Philosophy<br>Seattle Sounders FC
-</p>
-<h3>
-Links
-</h3>
-<!-- <img src="image.jpg" alt="Jeremy Swingle" width="500" height="600"> -->
+	<div class="content" id="contact"><br>
+		<h1 class="name">Jeremy Swingle
+			<div class="contactlinks">
+				<a href="https://www.linkedin.com/in/jeremy-swingle-0373a8188">
+					<img src="linkedin.png" alt="Jeremy's LinkedIn" width="50px" height="50px">
+				</a>
+				<a href="https://dev.to/jswingle/taking-the-cloudresumechallenge-5d3i-temp-slug-8544152?preview=66e89402f9df58ecca2d48e4f2751b0c9b415f246a6a4493e791a89bc56087541ccccdf85113aee30d8043ff459eaf3a7553410516555a7b43673e2c">
+					<img src="devto.png" alt="Jeremy's Dev.to Blog" width="50px" height="50px">
+				</a>
+				<a href="https://github.com/jswingle">
+					<img src="github.png" alt="Jeremy's GitHub" width="50px" height="50px">
+				</a>
+			</div>
+		</h1>
+		<div class="contact">
+			<b>e:  </b> jeremyswingle@yahoo.com<br>
+			<b>m: </b> (206) 683-5561<br>
+			<b>l:  </b> Greater Seattle Area<br>
+		</div>
+		<h2 class="titles">AWS | DevOps | CI/CD</h2>
+
+		<br><br><hr class="divider">
+		
+		<h3 class="sectiontitle" id="skills">Skills</h3>
+		<p>
+			- AWS Services:<br>
+				<ul>
+		   			<li>S3</li>
+		   			<li>CloudFront</li>
+		   			<li>CloudFormation</li>
+		    		<li>VPC Networking</li>
+			        <li>Load Balancing and Autoscaling</li>
+			        <li>Route 53</li>
+			        <li>DynamoDB</li> 
+			        <li>Lambda</li>
+			    </ul>
+			- Docker<br>- Kubernetes<br>- Linux<br>- Python<br>- GitHub<br>- CI/CD<br><br>
+		</p>
+
+		<hr class="divider">
+
+		<h3 class="sectiontitle" id="education">Education and Certification</h3>
+		<p class="titles">Amazon Web Services</p>
+
+			<div class="certs">
+				<a href="https://www.youracclaim.com/badges/660788d5-2fdb-4089-905f-9cecd793f6a8/public_url">
+					<img src="sa.png" alt="Certified Solutions Architect - Associate" width="150px" height="150px">
+				</a>
+				<a href="https://www.youracclaim.com/badges/d055a814-b573-474e-9ebf-09aead491bc1/public_url">
+					<img src="sysops.png" alt="Certified SysOps Administrator - Associate" width="150px" height="150px">
+				</a>
+				<a href="https://www.youracclaim.com/badges/123ffb69-3901-42a4-9986-a4b5a11ef79a/public_url">
+					<img src="developer.png" alt="Certified Developer - Associate" width="150px" height="150px">
+				</a>
+			</div>
+
+		<p class="titles">Northwest University</p>
+		<p style="margin-left: 50px">Bachelor of Arts<span class="dates">May 2016 &#9913 Kirkland, WA</span>
+		<br>Magna Cum Laude</p><br>
+
+		<hr class="divider">
+
+		<h3 class="sectiontitle" id="experience">Experience</h3>
+		<p class="titles">Quality Assurance Lead<span class="dates">June 2017 - Present &#9913 Bellevue, WA</span></p>
+		<p class="worklocation">Insight Global</p>
+		<ul>
+			<li>Ensure accordance to Microsoft Research requirements for various projects (e.g. filenames, metadata, photo/video tagging)</li>
+		   	<li>Utilize customer-provided data collection tools and recommend bugfixes/features</li>
+		   	<li>Implement automated command-line solutions for data collecting, editing, and delivering</li>
+		    <li>Team lead; responsible for high accuracy, daily reporting, and timely completion of projects</li> 
+		    <li>Ensure security and disposal of sensitive data</li>
+		    <li>Deliver data to clients and vendors securely via Azure, OneDrive, and DropBox</li>
+		</ul>
+
+		<p class="titles">Logistics/Production Associate<span class="dates">Nov 2012 - June 2017 &#9913 Kirkland, WA</span><br>
+		<p class="worklocation">JEMCO Components & Fabrication</p>
+		<ul>
+	   		<li>Digitally filed compliance certification, engineering documentation, and specifications</li>
+	        <li>Managed inventory, sales, and vendor information</li>
+	        <li>Designed new production programs using CorelDraw</li> 
+	    	<li>Implemented customer revision requests for jobs in-process</li>
+	    </ul><br>
+
+	    <hr class="divider">
+
+		<h3 class="sectiontitle" id="interests">Interests</h3>
+		<p>- Cloud DevOps<br>- Infrastructure as code (IaC)<br>- Choral singing<br>- History<br>- Philosophy</p>
+
+		<p style="text-align: center;"><b>Visits: </b><span id="link"></span></p><br>
+	</div>
 </body>
 </html>
